@@ -1,14 +1,33 @@
-\documentclass[a4paper,10pt]{letter}
+\documentclass[a4paper,12pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[spanish]{babel}
 \begin{document}
+\title{Título del artículo}
+\author{Nombre y apellido \\
+        Técnicas Experimentales~\footnote{Universidad de La Laguna}
+        }
+\date {\today}
+\maketitle
+\begin{abstract}
+  En \LaTeX{}~\cite{Lam:86} es sencillo escribir expresiones
+  matemáticas como $a=\sum_{i=1}^{10} {x_i}^{3}$
+  y deben ser escritas entre dos símbolos \$.
+  Los superíndices se obtienen con el símbolo \^{}, y
+  los subíndices con el símbolo \_.
+  Por ejemplo: $x^2 \times y^{\alpha + beta}$.
+  También se pueden escribir fórmulas centradas:
+  \[h^2=a^2 + b^2 \]
+\end{abstract}
+
+\section{Primera sección}
+  
 Si simplemete se desea escribir un texto normal en LaTeX,
 sin complicadas f\'ormulas matem\'ticas o efectos especiales
 como cambios de fuente, entonces simplemente tiene que escribir
 en espa\~nol normalmente.\par
 Si desea cambiar de párrafo ha de dejar una linea en blanco o bien
-utilizar el comando.\par
-No es necesario preocuparse de la sangria de los parrafos:
+utilizar el comando\par.
+No es necesario preo\-cu\-parse de la san\-gría de los pá\-rra\-fos:
 todos los párrafos se sangrarán automaticamente con la excepción
 del primer párrafo de una sección.
 
@@ -23,4 +42,12 @@ Tambien se ha de tener cuidado con los guiones: se utiliza un único
 guión para la separación de sílabas, mientras que se utilizan
 tres guiones seguidos para producir un guión de los que se usan
 como signo de puntuación --- como en esta oración.
+\begin{thebibliography}{00}
+  \bibitem{Lam:86}
+  Lamport, Leslie.
+  TLSA in pictures.
+  \emph{IEEE Transactions on Software Engineering},
+  21(9), 768-775.
+  (1995)
+\end{thebibliography}
 \end{document}
